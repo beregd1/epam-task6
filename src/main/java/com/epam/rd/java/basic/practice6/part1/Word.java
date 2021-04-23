@@ -41,8 +41,10 @@ public class Word implements Comparable<Word> {
 
     @Override
     public boolean equals(Object obj) {
-        if (obj.getClass().equals(this.getClass())) {
-            return content.equals(((Word) obj).content);
+        try {
+            obj.getClass().equals(this.getClass());
+        } catch (NullPointerException e) {
+            System.out.println(e.getMessage());
         }
         return false;
     }

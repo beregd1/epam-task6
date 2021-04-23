@@ -8,10 +8,11 @@ import com.epam.rd.java.basic.practice6.part5.Part5;
 import com.epam.rd.java.basic.practice6.part6.Part6;
 
 public class Demo {
+	private static final String FILE_NAME = "part6.txt";
 
 	public static void main(String[] args) {
 System.out.println("Part1: ");
-		Part1.main(null);
+		Part1.main();
 		System.out.println("Part2: ");
 		Part2.main(null);
 		System.out.println("Part3: ");
@@ -21,9 +22,9 @@ System.out.println("Part1: ");
 		System.out.println("Part5: ");
 		Part5.main(null);
 		System.out.println("Part6: ");
-		Part6.main(new String[]{"--input", "part6.txt", "--task", "frequency"});
-		Part6.main(new String[]{"-i", "part6.txt", "-t", "length"});
-		Part6.main(new String[]{"--input", "part6.txt", "-t", "duplicates"});
+		Part6.main(new String[]{"--input", FILE_NAME, "--task", "frequency"});
+		Part6.main(new String[]{"-i", FILE_NAME, "-t", "length"});
+		Part6.main(new String[]{"--input", FILE_NAME, "-t", "duplicates"});
 	}
 
 }

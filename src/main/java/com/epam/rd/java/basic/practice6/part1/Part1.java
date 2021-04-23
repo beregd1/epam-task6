@@ -9,7 +9,7 @@ public class Part1 {
     private static final InputStream STD_IN = System.in;
     private static final String ENCODING = "Cp1251";
 
-    public static void main(Object o) {
+    public static void main() {
         String input = "asd 43 asdf asd 43\n" +
                 "434 asdf\n" +
                 "kasdf asdf stop asdf\n" +
